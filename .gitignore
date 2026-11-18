@@ -1,0 +1,22 @@
+# ---- Bí mật: không bao giờ commit ----
+.env
+.env.*
+!.env.example
+
+# ---- Repo công khai: không commit ----
+*.zip
+*.jsonl
+
+# ---- Rác của Windows / macOS ----
+*:Zone.Identifier
+Thumbs.db
+.DS_Store
+
+# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
