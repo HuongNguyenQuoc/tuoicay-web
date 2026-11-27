@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TomatoCare — Giám sát bệnh cây trồng</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E7D32'/%3E%3Cpath d='M15 24a7 7 0 0 1-1.2-13.9C19.5 9 21 8.48 23 6c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div class="proto-bar" id="protoBar">
+    <span>Xem thử:</span>
+    <button id="btnInteractive" class="active" onclick="setViewMode('interactive')">Tương tác</button>
+    <button id="btnPdfMode" onclick="setViewMode('pdf')">6 màn hình (In PDF)</button>
+    <button id="btnPrint" onclick="printAllScreens()">Xuất PDF</button>
+    <button class="proto-close" title="Ẩn thanh này" onclick="document.getElementById('protoBar').style.display='none'">×</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
